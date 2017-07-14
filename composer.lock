@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "dae21f528b20ab489bc46bfb364b803e",
+    "content-hash": "3106df98e58b49ec8815e8c7696b9a05",
     "packages": [
         {
             "name": "doctrine/inflector",
@@ -1484,6 +1484,56 @@
                 "random"
             ],
             "time": "2017-03-13T16:27:32+00:00"
+        },
+        {
+            "name": "podcastcrawler/podcastcrawler",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/podcastcrawler/podcastcrawler.git",
+                "reference": "1d6f0e269daedb6d139bac7229e07e5ecdacd2b0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/podcastcrawler/podcastcrawler/zipball/1d6f0e269daedb6d139bac7229e07e5ecdacd2b0",
+                "reference": "1d6f0e269daedb6d139bac7229e07e5ecdacd2b0",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "PodcastCrawler\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dorian Neto",
+                    "email": "doriansampaioneto@gmail.com"
+                }
+            ],
+            "description": "PHP library to find podcasts",
+            "keywords": [
+                "api",
+                "digitalpodcast",
+                "framework",
+                "itunes",
+                "library",
+                "mp3",
+                "podcast",
+                "provider",
+                "rest"
+            ],
+            "time": "2017-02-10T22:27:09+00:00"
         },
         {
             "name": "psr/log",

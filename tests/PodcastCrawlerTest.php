@@ -2,6 +2,22 @@
 
 class PodcastCrawlerTest extends TestCase
 {
+    public function testFindByUrl()
+    {
+        $response = $this->call('GET', '/find', ['url' => 'http://www.nerdoutwithme.com/feed/podcast']);
+
+        $data = $response->original;
+
+        $this->assertEquals(200, $response->status());
+        $this->assertArrayHasKey('title', $data);
+        $this->assertArrayHasKey('description', $data);
+        $this->assertArrayHasKey('image', $data);
+        $this->assertArrayHasKey('site', $data);
+        $this->assertArrayHasKey('language', $data);
+        $this->assertArrayHasKey('episodes_total', $data);
+        $this->assertArrayHasKey('episodes', $data);
+    }
+
     public function testGetByName()
     {
         $response = $this->call('GET', '/list', ['name' => 'nerdcast']);

@@ -29,4 +29,15 @@ class PodcastCrawlerController extends Controller
             return response()->json($data, 500);
         }
     }
+
+    public function find(Request $request)
+    {
+        try {
+            $data = $this->service->findByUrl($request->query());
+
+            return response()->json($data);
+        } catch (Exception $except) {
+            return response()->json($data, 500);
+        }
+    }
 }

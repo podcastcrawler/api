@@ -24,4 +24,9 @@ class PodcastCrawlerService
 
         return $library->get($parameters['name']);
     }
+
+    public function findByUrl(array $parameters)
+    {
+        return $this->library->find($parameters['url']);
+    }
 }

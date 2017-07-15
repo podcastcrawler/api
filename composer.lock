@@ -1487,16 +1487,16 @@
         },
         {
             "name": "podcastcrawler/podcastcrawler",
-            "version": "1.1.0",
+            "version": "1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/podcastcrawler/podcastcrawler.git",
-                "reference": "1d6f0e269daedb6d139bac7229e07e5ecdacd2b0"
+                "reference": "016fafd58abaa5b18499772b178dab311213c275"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/podcastcrawler/podcastcrawler/zipball/1d6f0e269daedb6d139bac7229e07e5ecdacd2b0",
-                "reference": "1d6f0e269daedb6d139bac7229e07e5ecdacd2b0",
+                "url": "https://api.github.com/repos/podcastcrawler/podcastcrawler/zipball/016fafd58abaa5b18499772b178dab311213c275",
+                "reference": "016fafd58abaa5b18499772b178dab311213c275",
                 "shasum": ""
             },
             "require": {
@@ -1533,7 +1533,7 @@
                 "provider",
                 "rest"
             ],
-            "time": "2017-02-10T22:27:09+00:00"
+            "time": "2017-07-15T02:56:19+00:00"
         },
         {
             "name": "psr/log",

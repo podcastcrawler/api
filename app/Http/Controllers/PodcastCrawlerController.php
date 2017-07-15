@@ -17,6 +17,16 @@ class PodcastCrawlerController extends Controller
 
     public function index(Request $request)
     {
-        return response()->json($this->service->getByName($request->query()));
+        try {
+            $data = $this->service->getByName($request->query());
+
+            if (isset($data['result_count']) && $data['result_count'] === 0) {
+                return response()->json($data, 404);
+            }
+
+            return response()->json($data);
+        } catch (Exception $except) {
+            return response()->json($data, 500);
+        }
     }
 }

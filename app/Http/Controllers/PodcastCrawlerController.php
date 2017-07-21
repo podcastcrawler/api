@@ -15,6 +15,11 @@ class PodcastCrawlerController extends Controller
         $this->service = $podcastCrawlerService;
     }
 
+    public function documentation()
+    {
+        return view('documentation');
+    }
+
     public function index(Request $request)
     {
         try {
